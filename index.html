@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+        <div class="form">
+            <p id="description">Help me improve My Portfolio Website</p>
+
+
+            <form action="submit" id="survey-form">
+                <div class="row">
+                    <div class="label">
+                        <label for="name" id="name-label">Name:
+                        </label>
+                    </div>
+                    <div class="rightSide">
+                        <input autofocus type="text" id="name" placeholder="Your name..." required class="input">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="email" id="email-label">Email:
+                        </label>
+                    </div>
+                    <div class="rightSide">
+                        <input type="email" id="email" placeholder="Your email..." required class="input">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="number" id="number-label">Age:
+                        </label>
+                    </div>
+                    <div class="rightSide">
+                        <input type="number" id="number" placeholder="age..." required min="18" max="61" class="input">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="job">What best describe your current job role?
+
+                        </label>
+                    </div>
+                    <div class="rightSide">
+                        <select id="dropdown" name="employment">
+                            <option value="student" selected>Student</option>
+                            <option value="full-time-job">Full-time job</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                            <option value="unemployed">unemployed</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="label">
+                        <label for="recommendation">Would you recommend me as a Developer?</label>
+
+                    </div>
+                    <div class="rightSide">
+                        <input type="radio" name="recommend" value="definately" checked>Definately <br>
+                        <input type="radio" name="recommend" value="maybe">Maybe<br>
+                        <input type="radio" name="recommend" value="not-sure">Not sure
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="label">
+                        <label for="like">What do you like most about my Portfolio?
+                    </div>
+                    <div class="rightSide">
+                        <select name="like" id="dropdown" required>
+                            <option value="" selected id="default-option">select an option</option>
+                            <option value="UI">UI</option>
+                            <option value="nav">Navigation</option>
+                            <option value="Typography">Typography</option>
+                            <option value="Projects">Projects</option>
+                            <option value="Responsive">Vidoes</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="label">
+                        <label for="improve">Things I can improve on<br>
+
+                        </label>
+                    </div>
+                    <div class="rightSide">
+                        <input type="checkbox" id="front-end" name="option1" value="Front-end">Add more Front-end
+                        projects<br>
+                        <input type="checkbox" name="option2" id="back-end" value="Back-end">Add more Back-end
+                        projects<br>
+                        <input type="checkbox" name="option3" id="data-visualization" value="Data-visualization">Do
+                        projects with Data
+                        Visualization<br>
+                        <input type="checkbox" name="option4" id="ui" value="ui">UI Design<br>
+                        <input type="checkbox" name="option5" id="forms" value="forms">Forms<br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="label">
+                        <label for="comments">Any comments or suggestion?</label>
+
+                    </div>
+                    <div class="rightSide">
+                        <textarea name="comments" id="comments" cols="30" rows="10"
+                            placeholder="enter comments here..."></textarea>
+
+                    </div>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+    </main>
+    </div>
+    <footer id="footer">Copyright &copy: 2019 by Bongx Media</footer>
+</body>
+
+</html>
